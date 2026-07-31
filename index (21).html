@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join Exodus Frontier</title>
+  <!-- Try to launch the game automatically -->
+  <meta http-equiv="refresh" content="0; url=steam://connect/98.142.14.57:28015">
+  <style>
+    :root { --blood: #c14229; --bg: #0d0a09; --ink: #f2ede4; --muted: #cbc4b8; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: radial-gradient(circle at 50% 30%, #2a1210 0%, var(--bg) 70%);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 24px; min-height: 100vh;
+    }
+    h1 { font-size: 2.4rem; letter-spacing: 2px; margin: 0 0 6px; text-transform: uppercase; }
+    h1 span { color: var(--blood); }
+    p { color: var(--muted); margin: 6px 0; max-width: 460px; line-height: 1.5; }
+    .btn {
+      display: inline-block; margin: 22px 0 10px; padding: 16px 40px;
+      background: var(--blood); color: #fff; text-decoration: none;
+      font-size: 1.15rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+      border-radius: 8px; box-shadow: 0 6px 24px rgba(193,66,41,.45);
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(193,66,41,.6); }
+    .sub { font-size: .9rem; margin-top: 18px; }
+    .ip { font-family: monospace; color: var(--ink); background: #1c1512; padding: 3px 8px; border-radius: 5px; }
+    a.link { color: var(--blood); }
+  </style>
+</head>
+<body>
+  <h1>Exodus <span>Frontier</span></h1>
+  <p>Launching Rust and connecting you to the server&hellip;</p>
+
+  <a class="btn" href="steam://connect/98.142.14.57:28015">Join the Server</a>
+
+  <p class="sub">
+    If the game didn't open, make sure Rust is installed, then click the button above.<br>
+    Or add this server manually in Rust's community browser:
+    <br><span class="ip">98.142.14.57:28015</span>
+  </p>
+  <p class="sub">
+    Community &amp; support: <a class="link" href="https://discord.gg/UY8CYHmeaA">discord.gg/UY8CYHmeaA</a>
+  </p>
+
+  <script>
+    // Nudge the launch again shortly after load (some browsers ignore the meta refresh)
+    setTimeout(function () {
+      window.location.href = "steam://connect/98.142.14.57:28015";
+    }, 500);
+  </script>
+</body>
+</html>
